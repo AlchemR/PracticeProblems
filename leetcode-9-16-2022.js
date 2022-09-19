@@ -66,7 +66,7 @@ var pivotIndex = function (nums) {
 
 
 
-
+var bracketSolve = function (s){
 const hold = {
   "(": ")",
   "[": "]",
