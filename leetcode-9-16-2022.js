@@ -64,3 +64,24 @@ var pivotIndex = function (nums) {
 // ========================================================================================================================
 
 
+
+
+
+const hold = {
+  "(": ")",
+  "[": "]",
+  "{": "}",
+};
+let stack = [];
+for (let i = 0; i < s.length; i++) {
+  if (hold[s[i]]) {
+    stack.push(hold[s[i]]);
+  } else {
+    if ( (s[i] != stack.pop()) )
+    return false;
+  }
+}
+return !stack.length;
+
+};
+
